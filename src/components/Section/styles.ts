@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { FaDropbox } from 'react-icons/fa';
 
 export const Container = styled.div`
     --padding-top:100px;
@@ -36,6 +37,14 @@ export const Container = styled.div`
        
     }
     background: var(--bg-color);
+`;
+
+export const HeaderWrapper = styled.div ``;
+export const Header = styled.div ``;
+export const DropboxLogo = styled(FaDropbox) `
+    width:36px;
+    height:71px;
+    fill:var(--logo-color);
 `;
 
 export const Content = styled.div `
