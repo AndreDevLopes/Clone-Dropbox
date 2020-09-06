@@ -1,10 +1,36 @@
 import React from 'react';
-import GlobalStyled from './styles/stylesGlobal'
+import GlobalStyled from './styles/stylesGlobal';
+import Section from './components/Section';
+import data from './data/index';
 
 function App() {
   return (<>
-  <h1>HELLO WORLD</h1>
-  <GlobalStyled></GlobalStyled>
+      <Section
+        variant="blue"
+        title={data[0].title}
+        description={data[0].description}
+      />
+      <Section
+        variant="beige"
+        title={data[1].title}
+        description={data[1].description}
+      />
+      <Section
+        variant="blue"
+        title={data[2].title}
+        description={data[2].description}
+      />
+      <Section
+        variant="white"
+        title={data[3].title}
+        description={data[3].description}
+      />
+      <Section
+      variant="black"
+      title={data[4].title}
+      description={data[4].description}
+    />
+  <GlobalStyled />
   </>);
 }
 
