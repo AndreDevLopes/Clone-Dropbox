@@ -13,7 +13,15 @@ export const Container = styled.div`
         box-shadow: -7px 0 5px -6px rgba(0,0,0,0.075);
     }
     @media(min-width: 1440px){
-        width: calc(480px + ((100vw - 1440px) / 2))
+        width: calc(480px + ((100vw - 1440px) / 2));
     }
-  
+
+    transform: translateX(100%);
+    transition: 0.5s;
+
+    @media(min-width: 1024px){
+        &.scrollOpen{
+            transform: translateX(0);
+        }
+    }
 `;
